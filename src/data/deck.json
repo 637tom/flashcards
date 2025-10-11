@@ -3,18 +3,36 @@
     "id": 1,
     "front": "fiszka 1 front",
     "back": "fiszka 1 back",
-    "ease": 2.5,
-    "interval": 0,
+    "ease": 2.3,
+    "interval": 1,
     "repetitions": 0,
-    "due_at": "2025-10-11"
+    "due_at": "2025-10-12T20:07:14.747049Z"
   },
   {
     "id": 2,
     "front": "fiszka 2 front",
     "back": "fiszka 2 back",
+    "ease": 2.3,
+    "interval": 1,
+    "repetitions": 0,
+    "due_at": "2025-10-12T20:07:24.916824Z"
+  },
+  {
+    "id": 3,
+    "front": "test",
+    "back": "odpoweidz test",
+    "ease": 2.6,
+    "interval": 1,
+    "repetitions": 1,
+    "due_at": "2025-10-12T20:15:33.837915Z"
+  },
+  {
+    "id": 4,
+    "front": "karta czwarta",
+    "back": "odpoweidz karty czwartej",
     "ease": 2.5,
     "interval": 0,
     "repetitions": 0,
-    "due_at": "2025-10-11"
+    "due_at": "2025-10-11T20:16:01.026300Z"
   }
 ]
