@@ -66,4 +66,13 @@ class DeckStorage:
                 due_now.append(card)
         due_now.sort(key = lambda c: self.parse_iso(c["due_at"]))        
         return due_now 
-
+    @staticmethod
+    def to_iso(dt):
+        return dt.astimezone(timezone.utc).isoformat().replace("+00:00","Z")
+    def save(self):
+        if not self.path.exists():
+            raise FileNotFoundError(f"Deck file not found at {self.path}")
+        tmp_path = self.path.with_suffix(self.path.suffix + ".tmp")
+        with tmp_path.open("w", encoding="utf-8") as f:
+            json.dump(self.cards, f, ensure_ascii=False, indent=2)
+        tmp_path.replace(self.path)
